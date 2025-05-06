@@ -3,19 +3,19 @@
 // Estrutura para armazer os dados de uma carta
  struct cartasupertriunfo {
     
-    char estado;                       // Letra de A a H              
+    char estado;                     // Letra de A
     char codigo[4];                   // Ex: A01
     char nomeCidade[100];              // Nome da cidade
-    int populacao;                    // Número de habitantes    
-    float area;                      // Área em km²
-    float pib;                       //PIB da cidade
+    int populacao;                    // Número de habitantes   
+    float area;                       // Área em km²
+    float pib;                        //PIB da cidade
     int pontosTuristicos;           // Numero de pontos turísticos
 };
 
 int main(){
     // Declaração das duas cartas
-    struct carta1;
-    struct carta2;
+    struct cartasupertriunfo carta1;
+    struct cartasupertriunfo carta2;
 
     //Instruções para o usuário
     printf("=== Cadastro de Carta 1 ===\n");
@@ -64,7 +64,7 @@ int main(){
     scanf("%f", &carta2.pib);
 
     printf(" Número de Pontos Turisticos: ");
-    scanf("%d", &carta2.pontoSturisticos);
+    scanf("%d", &carta2.pontosTuristicos);
 
 
     // Exibição dos dados da priemira carta
@@ -77,8 +77,6 @@ int main(){
     printf("PIB: R$ %.2f bilhões\n", carta1.pib);
     printf("Pontos Turisticos: %d\n", carta1.pontosTuristicos);
 
-    // Espaço
-    printf("\n");
 
     // Exibição dos dados da segunda carta 
     printf("===Dados da Carta 2 ===\n");
